@@ -38,7 +38,9 @@ std::string ValhallaWrapper::get_matrix_query(
   std::string all_locations;
   for (auto const& location : locations) {
     all_locations += "{\"lon\":" + std::to_string(location.lon()) + "," +
-                     "\"lat\":" + std::to_string(location.lat()) + "},";
+                     "\"lat\":" + std::to_string(location.lat()) +
+                     R"(,"type":"break_through"},)";
+
   }
   all_locations.pop_back(); // Remove trailing ','.
 
@@ -103,7 +105,7 @@ ValhallaWrapper::get_route_query(const std::vector<Location>& locations) const {
   for (auto const& location : locations) {
     query += "{\"lon\":" + std::to_string(location.lon()) + "," +
              "\"lat\":" + std::to_string(location.lat()) +
-             R"(,"type":"break"},)";
+             R"(,"type":"break_through"},)";
   }
   query.pop_back(); // Remove trailing ','.
 
