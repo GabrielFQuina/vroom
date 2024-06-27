@@ -73,7 +73,7 @@ std::string ValhallaWrapper::get_matrix_query(
   query += R"(,"service_factor":1)";
   query += R"(,"shortest":false)";
   query += R"(,"exclude_cash_only_tolls":false)";
-  query += R"(,"top_speed":30)";
+  query += R"(,"top_speed":90)";
   query += R"(,"axle_count":5)";
   query += R"(,"fixed_speed":0)";
   query += R"(,"toll_booth_penalty":0)";
@@ -136,7 +136,7 @@ ValhallaWrapper::get_route_query(const std::vector<Location>& locations) const {
   query += R"(,"service_factor":1)";
   query += R"(,"shortest":false)";
   query += R"(,"exclude_cash_only_tolls":false)";
-  query += R"(,"top_speed":30)";
+  query += R"(,"top_speed":90)";
   query += R"(,"axle_count":5)";
   query += R"(,"fixed_speed":0)";
   query += R"(,"toll_booth_penalty":0)";
