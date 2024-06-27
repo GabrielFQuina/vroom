@@ -51,8 +51,8 @@ std::string ValhallaWrapper::get_matrix_query(
   query += R"(,"country_crossing_penalty":0)";
   query += R"(,"country_crossing_cost":600)";
   query += R"(,"length":21.5)";
-  query += R"(,"width":1.6)";
-  query += R"(,"height":1.9)";
+  query += R"(,"width":2.6)";
+  query += R"(,"height":4.11)";
   query += R"(,"weight":21.77)";
   query += R"(,"axle_load":9)";
   query += R"(,"hazmat":false)";
@@ -60,8 +60,8 @@ std::string ValhallaWrapper::get_matrix_query(
   query += R"(,"use_tolls":1)";
   query += R"(,"use_ferry":1)";
   query += R"(,"ferry_cost":300)";
-  query += R"(,"use_living_streets":0.5)";
-  query += R"(,"use_tracks":0)";
+  query += R"(,"use_living_streets":1)";
+  query += R"(,"use_tracks":1)";
   query += R"(,"private_access_penalty":450)";
   query += R"(,"ignore_closures":false)";
   query += R"(,"ignore_restrictions":false)";
@@ -71,7 +71,7 @@ std::string ValhallaWrapper::get_matrix_query(
   query += R"(,"service_factor":1)";
   query += R"(,"shortest":false)";
   query += R"(,"exclude_cash_only_tolls":false)";
-  query += R"(,"top_speed":140)";
+  query += R"(,"top_speed":90)";
   query += R"(,"axle_count":5)";
   query += R"(,"fixed_speed":0)";
   query += R"(,"toll_booth_penalty":0)";
@@ -114,8 +114,8 @@ ValhallaWrapper::get_route_query(const std::vector<Location>& locations) const {
   query += R"(,"country_crossing_penalty":0)";
   query += R"(,"country_crossing_cost":600)";
   query += R"(,"length":21.5)";
-  query += R"(,"width":1.6)";
-  query += R"(,"height":1.9)";
+  query += R"(,"width":2.6)";
+  query += R"(,"height":4.11)";
   query += R"(,"weight":21.77)";
   query += R"(,"axle_load":9)";
   query += R"(,"hazmat":false)";
@@ -123,8 +123,8 @@ ValhallaWrapper::get_route_query(const std::vector<Location>& locations) const {
   query += R"(,"use_tolls":1)";
   query += R"(,"use_ferry":1)";
   query += R"(,"ferry_cost":300)";
-  query += R"(,"use_living_streets":0.5)";
-  query += R"(,"use_tracks":0)";
+  query += R"(,"use_living_streets":1)";
+  query += R"(,"use_tracks":1)";
   query += R"(,"private_access_penalty":450)";
   query += R"(,"ignore_closures":false)";
   query += R"(,"ignore_restrictions":false)";
@@ -134,7 +134,7 @@ ValhallaWrapper::get_route_query(const std::vector<Location>& locations) const {
   query += R"(,"service_factor":1)";
   query += R"(,"shortest":false)";
   query += R"(,"exclude_cash_only_tolls":false)";
-  query += R"(,"top_speed":140)";
+  query += R"(,"top_speed":90)";
   query += R"(,"axle_count":5)";
   query += R"(,"fixed_speed":0)";
   query += R"(,"toll_booth_penalty":0)";
