@@ -112,7 +112,7 @@ ValhallaWrapper::get_route_query(const std::vector<Location>& locations) const {
   query += R"(],"costing":")" + profile + "\"";
   query += R"(,"costing_options":{"truck":{)";
   query += R"("exclude_unpaved":1)";
-  query += R"(,"maneuver_penalty":38)";
+  query += R"(,"maneuver_penalty":39)";
   query += R"(,"country_crossing_penalty":0)";
   query += R"(,"country_crossing_cost":600)";
   query += R"(,"length":21.5)";
